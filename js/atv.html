@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        div{
+            background-color: azure;
+            margin-top: 10%;
+            text-align: center;
+            margin-left: 25%;
+            margin-right: 25%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            flex: auto;
+            flex-basis: auto;
+        }
+        div > input{
+            margin-left: 30%;
+        }
+        div > textarea {
+            display: flex;
+            margin: auto;
+            flex: auto;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" name="text1" id="texto1">
+        <button onclick="maior()">UpperCase</button>
+    </div>
+    <div>
+        <input type="text" name="text2" id="texto2">
+        <button onclick="menor()">LowerCase</button>
+    </div>
+    <div>
+        <!-- <p id="res">Resultado</p> -->
+        <textarea id="res">a</textarea>
+    </div>
+    <script>
+        function maior() {
+            let t1 = document.getElementById('texto1').value
+            let b1 = document.getElementById('res')
+            b1.innerText = t1.toUpperCase()
+        }
+        function menor() {
+            let t2 = document.getElementById('texto2').value
+            let b2 = document.getElementById('res')
+            b2.innerText = t2.toLowerCase()
+        }
+    </script>
+</body>
+</html>

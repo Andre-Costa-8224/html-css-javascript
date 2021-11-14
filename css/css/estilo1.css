@@ -1,0 +1,33 @@
+*{margin: 0; padding: 0;}/*arterisco reseta as coisas*/
+
+.paragrafo{
+    display: inline;
+}
+
+#nav1{
+    margin-top: 35px;
+}
+
+#div1{
+    display: inline-block;
+    text-align: center;
+    height: 100px;
+    background-color: aqua;
+    width: 100%;
+}
+
+#div2{
+    display: inline-block;
+    height: 500px;
+    background-color: aquamarine;
+    width: 24.7%;
+    overflow: hidden;
+}
+
+#div3{
+    display: inline-block;
+    height: 500px;
+    background-color: cadetblue;
+    width: 75%;
+    overflow: hidden;
+}
